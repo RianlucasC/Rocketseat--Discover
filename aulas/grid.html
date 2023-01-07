@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            grid-template-areas: 
+            "topo topo"
+            "conteudo adicional"
+            "rodape rodape";
+        }
+
+        header {
+            grid-area: topo;
+            background-color: green;
+        }
+
+        main {
+            grid-area: conteudo;
+            background-color: red;
+        }
+
+        aside {
+            grid-area: adicional;
+            background-color: blue;
+        }
+
+        footer {
+            grid-area: rodape;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        topo
+    </header>
+    <main>
+        conteúdo
+    </main>
+    <aside>
+        infos adicionais 
+    </aside>
+    <footer>
+        rodapé
+    </footer>
+</body>
+</html>
