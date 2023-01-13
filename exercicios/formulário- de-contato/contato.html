@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de contato</title>
+    <style>
+        input {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+
+            <label for="inputNome">Nome:</label> <br>
+            <input type="text" name="nome" id="inputNome" minlength="3" placeholder="Nome completo"> <br>
+
+            <label for="inputEmail">Email:</label> <br>
+            <input type="email" name="email" id="inputEmail" placeholder="Example@gmail.com"> <br>
+
+            <label for="inputMensagem">Mensagem:</label> <br>
+            <textarea id="inputMensagem" cols="27" rows="10" maxlength="225" placeholder="Digite sua mensagem aqui"></textarea> <br>
+
+            <button type="submit">Enviar</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>
