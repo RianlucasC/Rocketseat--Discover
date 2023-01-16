@@ -6,6 +6,3 @@ const sayMyName = (name) => {
 
 sayMyName("Rian");
 
-const ola = () => "olá";
-
-console.log(ola());
