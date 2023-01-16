@@ -14,6 +14,20 @@ let student = {
 };
 console.log(student);
 
+const john = {
+    name: "john",
+    age: 22,
+    weight: 75.8,
+    isSubscribed: true,
+};
+
 console.log(`${student.name} de idade ${student.age} pesa ${student.weight} quilos`)
 
-let students = [];
+let students = [
+    student
+];
+
+students[1] = john;
+
+console.log(students);
+console.log(students[0]);
