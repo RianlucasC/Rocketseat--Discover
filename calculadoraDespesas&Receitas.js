@@ -1,14 +1,19 @@
-function calcularSaldo (receitas, despesas){
-    let totalReceitas = 0;
-    let totalDespesas = 0;
-    for (let valor of receitas) {
-        totalReceitas += valor;
-    }
-    for (let valor of despesas){
-        totalDespesas += valor;
-    }
-    let saldo = totalReceitas - totalDespesas;
-    return  saldo < 0? `o Saldo é negativo ${saldo}`: `o Saldo é positivo ${saldo}`;
+
+function calcReceitasDespesas(obj) {
+    let saldo = 0;
+    for(let value of obj.receitas) {
+        saldo += value;
+    };
+    for(let value of obj.despesas) {
+        saldo -= value;
+    };
+    return saldo < 0 ?  `${saldo.toFixed(2)} saldo negativo` : `${saldo.toFixed(2)} saldo postivo`;
 }
 
-console.log(calcularSaldo([1,11], [2,3,4]));
+const family = {
+    receitas: [2500, 3200, 250.43, 360.45],
+    despesas: [320.34, 128.45, 176.87, 1450.00,],
+};
+
+console.log(calcReceitasDespesas(family));
+
