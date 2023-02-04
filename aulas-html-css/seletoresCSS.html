@@ -10,6 +10,10 @@
             color: red;
         }
 
+        ul li::after {
+            content: ">";
+        }
+
         ul li:first-child {
             color: greenyellow;
         }
@@ -21,6 +25,14 @@
         ul li:nth-child(3) {
             color: blue;
         }
+
+        a:hover {
+            color:blueviolet;
+        }
+
+        input:focus {
+            background-color: red;
+        }
     </style>
 </head>
 <body>
@@ -30,6 +42,9 @@
         <li>nth-of-type</li>
         <li>text</li>
     </ul>
+    
+    <a href="#">clique aqui</a>
+    <input type="text">
 
 </body>
 </html>
