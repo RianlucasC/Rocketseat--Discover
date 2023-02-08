@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com 2 colunas</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {            
+            display: flex;
+            background-color: #EAECF4;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        header {
+            display: block;
+        }
+
+        nav {
+            background-color: white;
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center ;
+        }
+
+        nav p {
+            padding: 30px;
+        }
+
+        nav ul {
+            align-items: baseline;
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+            padding: 40px;
+        }
+
+        ul li:last-child {
+            background-color: #3F19F4;
+            color: white;
+            padding: 6px;
+            border-radius: 2px;
+        }
+
+        ul li:last-child:hover {
+            background-color: #674af8;
+            color: white;
+            padding: 6px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>
+                <strong>LOGO</strong>
+            </p>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>SERVICES</li>
+                <li>TESTIMONIALS</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>conteúdo principal</p>
+    </main>
+    <aside>
+        <p>noticias/ aside</p>
+    </aside>
+</body>
+</html>
