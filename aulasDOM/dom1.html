@@ -7,13 +7,16 @@
     <title>usando DOM</title>
 </head>
 <body>
-    <h1 id="myTitle">Meu título</h1>
+    <h1 id="myTitle" title="#">Meu título</h1>
     <p class="myP">parágrafo1</p>
     <p class="myP">parágrafo2</p>
     <script>
        // console.log(document.getElementById("myTitle"));
        //console.log(document.getElementsByClassName("myP"));
-       console.log(document.getElementsByTagName("h1"));
+       //console.log(document.getElementsByTagName("h1"));
+       //console.log(document.querySelector("title"));
+       //console.log(document.querySelector(".myP"));
+       console.log(document.querySelectorAll(".myP"));
     </script>
 </body>
 </html>
