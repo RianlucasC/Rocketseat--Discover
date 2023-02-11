@@ -7,12 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Título</h1>
+    <h1 id="meuTitulo">Título</h1>
 
     <script>
         const title = document.querySelector('h1');
         title.setAttribute('class', 'myTitle');
+        title.removeAttribute('id');
         console.log(title);
+        console.log(title.getAttribute('class'));
     </script>
 </body>
 </html>
