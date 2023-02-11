@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Título</h1>
+
+    <script>
+        const element = document.querySelector('h1');
+        element.classList.add('red', 'green'); // adicionando uma class a um elemento
+        console.log(element.classList); // mostrando as classes de um elemento
+        element.classList.remove('green'); // removendo a class green do elemento
+        element.classList.toggle('blue') // se a class existir dentro do elemento ele remove senão ele adiciona
+    </script>
+</body>
+</html>
