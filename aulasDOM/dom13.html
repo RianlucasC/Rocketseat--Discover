@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>título</h1>
+    <p>texto</p>
+
+    <script>
+        const body = document.querySelector('body');
+        const element = document.createElement('p');
+        const h1 = body.querySelector('h1');
+        element.innerText = "olá";
+        body.insertBefore(element, h1) // insira element antes de h1 
+        //body.insertBefore(element, h1.nextElementSibling)  insira o element depois de h1
+    </script>
+</body>
+</html>
