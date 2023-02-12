@@ -1,42 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .card {
-            background-color: aquamarine;
-        }
-    </style>
 </head>
 <body>
-    
-    <script>
-        function createCard(title, text) {
-            // Cria um elemento div com a classe "card"
-            const card = document.createElement("div");
-            card.classList.add("card");
-            
-            // Cria um elemento h3 com o título passado como argumento
-            const cardTitle = document.createElement("h3");
-            cardTitle.textContent = title;
-            
-            // Cria um elemento p com o texto passado como argumento
-            const cardText = document.createElement("p");
-            cardText.textContent = text;
-            
-            // Adiciona o título e o texto ao card
-            card.appendChild(cardTitle);
-            card.appendChild(cardText);
-            
-            // Adiciona o card ao corpo do documento
-            document.body.appendChild(card);
-        }
+    <aside>
+        <form>
+            <h1>Cadastrar Card</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br>
+            <input type="submit" value="Enviar" onclick="">
+        </form>
+    </aside>
+    <main>
 
-        createCard("Título do Card", "Texto do Card");
-        createCard("Título do Card2", "Texto do Card2");
-    </script>
+    </main>
 </body>
 </html>
