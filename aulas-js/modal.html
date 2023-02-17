@@ -16,7 +16,7 @@ flex flex-col items-center justify-center">
         Abrir Janela
     </button>
 
-    <div class="modal-wrapper invisible fixed 
+    <div id="modal" class="modal-wrapper invisible fixed 
     bg-gray-500 w-screen h-screen flex 
     items-center justify-center">
         <div class="p-8 bg-white text-center rounded">
@@ -26,10 +26,15 @@ flex flex-col items-center justify-center">
     
 
     <script>
-        let openModal = document.querySelector('#openModal');
-        openModal.addEventListener('click', openMod);
-        function openMod() {
-            openModal.removeAttribute('invisible');
+        const openModal = document.querySelector('#openModal');
+        const modalOn = document.querySelector('#modal');
+        openModal.onclick = function() {
+            modal.classList.remove('invisible');
+        };
+        document.onkeydown = function(event) {
+            if (event.key == "Escape") {
+                modal.classList.toggle('invisible');
+            }
         }
     </script>
 </body>
