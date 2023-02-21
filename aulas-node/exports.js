@@ -1,0 +1,1 @@
+module.exports = "Enviado dados do meu Módulo"
