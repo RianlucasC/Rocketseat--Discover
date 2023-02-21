@@ -1,11 +1,6 @@
-module.exports = {
-    getFlag : function  (str) {
-        if (str == "--name") {
-            return process.argv[0];
-        } else if (str == "--greeting") {
-            return process.argv[1];
-        } else {
-            return "invalido";
-        }
-    }
-} 
+function getFlagValue (flag) {
+    const index = process.argv.indexOf(flag) + 1;
+    return process.argv[index];
+}
+
+module.exports = getFlagValue; // exportando a função get Flags
