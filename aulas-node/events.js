@@ -8,3 +8,9 @@ evento.on('saySomething', (msg) => { // ouvindo o evento saySomething e rodando 
 evento.emit('saySomething', "evento 1"); // acionando um evento chamado saySomething e passando um argumento ( "evento 1");
 evento.emit('saySomething', "evento 2");
 
+/*
+evento.once('saySomething', (msg) => { // vai ouvir o evento somente uma vez 
+    console.log(`o evento foi ouvido, ${msg}`);
+});
+*/
+
