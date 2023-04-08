@@ -1,15 +1,11 @@
 const express = require('express');
 
+const axios = require('axios');
 const app = express();
 
 app.listen('3000');
 
-let author = "Desconhecido"
+app.route('/').get( (req ,res) => {
+    res.send('teste');
+});
 
-//middleware 
-app.use(express.json());
-
-app.route('/').put( (req, res) => {
-    author = req.body.author;
-    res.send(author);
-})
