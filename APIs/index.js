@@ -1,11 +1,13 @@
 const express = require('express');
-
 const axios = require('axios');
+
 const app = express();
 
 app.listen('3000');
 
 app.route('/').get( (req ,res) => {
-    res.send('teste');
+    axios.get('https://api.github.com/users/RianlucasC')
+    .then(result => res.send(result.data))
+    .catch(err => console.error(error))
 });
 
