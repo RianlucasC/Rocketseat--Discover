@@ -31,12 +31,32 @@ function addUser(newUser) {
     .catch(error => console.error(error))
 }
 
+function updateUser(id, updateUser) {
+    fetch(`${url}/${id}`, {
+        method: "PUT",
+        body: JSON.stringify(updateUser),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+    .then(reponse => reponse.json())
+    .then(data => alertApi.textContent = data)
+    .catch( error => console.error(error))
+}
+
+const updatedUser = {
+    name: "Marcelão",
+    avatar: "http://picsum.photos/200/300",
+    city: "Recife"
+}
+
 const newUser = {
     name: "Rian",
     avatar: "http://picsum.photos/200/300",
     city: "Minas gerais"
 }
 
-addUser(newUser);
+updateUser(1,updatedUser);
+//addUser(newUser);
 getUsers();
 getUser("1");
