@@ -18,5 +18,25 @@ function getUser(id) {
     .catch(error => console.error(error))
 }
 
+function addUser(newUser) {
+    fetch(url, {
+        method: "POST",
+        body: JSON.stringify(newUser),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+    .then(response => response.json())
+    .then(data => alertApi.textContent = data)
+    .catch(error => console.error(error))
+}
+
+const newUser = {
+    name: "Rian",
+    avatar: "http://picsum.photos/200/300",
+    city: "Minas gerais"
+}
+
+addUser(newUser);
 getUsers();
 getUser("1");
